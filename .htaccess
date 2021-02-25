@@ -4,7 +4,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 ErrorDocument 404 /error/404.html
 
-ErrorDocument 404 /404.html
+
 ErrorDocument 404 /404
 
 
@@ -14,4 +14,4 @@ RewriteBase /
 ErrorDocument 404 http://vozon.ml/error/404.html/
 
 RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ /error/404.php [L]
+RewriteRule ^(.*)$ /error/404.html [L]
