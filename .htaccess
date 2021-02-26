@@ -3,15 +3,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 ErrorDocument 404 /error/404.html
-
-
-
-
-
-
-RewriteBase /
-
-ErrorDocument 404 http://vozon.ml/error/404.html/
-
-RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ /error/404.html [L]
